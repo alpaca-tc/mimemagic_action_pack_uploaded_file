@@ -10,6 +10,19 @@ detects actual content_type with [mimemagic](https://github.com/minad/mimemagic)
 gem 'mimemagic_action_pack_uploaded_file'
 ```
 
+## CarrierWave configuration
+
+Define `content_type_whitelist` to your uploader.
+[Click here for details](Please https://github.com/carrierwaveuploader/carrierwave#securing-uploads)
+
+```
+class YourUploader < CarrierWave::Uploader::Base
+  def content_type_whitelist
+    %w(image/jpeg image/png)
+  end
+end
+```
+
 ## Testing
 
 `bundle exec rake spec`
