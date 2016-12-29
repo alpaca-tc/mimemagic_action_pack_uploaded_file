@@ -1,0 +1,5 @@
+require 'mimemagic_action_pack_uploaded_file/version'
+
+module MimemagicActionPackUploadedFile
+  autoload :UploadedFileWithMimemagic, 'mimemagic_action_pack_uploaded_file/uploaded_file_with_mimemagic'
+end
